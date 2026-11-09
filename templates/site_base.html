@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Site Lívia Toquetão</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='site_base.css') }}">
+</head>
+
+<body>
+
+
+<div class="logo">
+    <img src="{{ url_for('static', filename='img/logo_menor.png') }}"
+         alt="Logo Lívia Toquetão">
+</div>
+
+
+<div class="pai">
+
+    <a class="botao-menu"
+       href="{{ url_for('contato') }}">
+        Fale com a gente
+    </a>
+
+    <a class="botao-menu"
+       href="{{ url_for('portfolio') }}">
+        Portfólio
+    </a>
+
+    <a class="botao-menu"
+       href="https://www.instagram.com/decoracoesliviatoquetao/"
+       target="_blank">
+        Instagram
+    </a>
+
+    <a class="botao-menu"
+       href="https://www.tiktok.com/@decoracoesliviatoquetao_"
+       target="_blank">
+        TikTok
+    </a>
+
+</div>
+
+</body>
+
+</html>

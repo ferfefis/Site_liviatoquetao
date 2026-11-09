@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfólio - Lívia Toquetão</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='site_base.css') }}">
+</head>
+
+<body>
+
+    <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo_menor.png') }}"
+             alt="Logo Lívia Toquetão">
+    </div>
+
+    <div class="portfolio-container">
+
+        <h1>Portfólio</h1>
+
+        <div class="cards-portfolio">
+
+            <a class="card-portfolio"
+               href="{{ url_for('buque') }}">
+                Buquês
+            </a>
+
+            <a class="card-portfolio"
+               href="{{ url_for('cerimonias') }}">
+                Cerimônias
+            </a>
+
+            <a class="card-portfolio"
+               href="{{ url_for('mesa_doces') }}">
+                Mesa de Doces
+            </a>
+
+            <a class="card-portfolio"
+               href="{{ url_for('mesa_convidados') }}">
+                Mesa de Convidados
+            </a>
+
+            <a class="card-portfolio"
+               href="{{ url_for('backdroop') }}">
+                Backdroop
+            </a>
+
+        </div>
+
+        <a class="voltar"
+           href="{{ url_for('inicio') }}">
+            Voltar para a página inicial
+        </a>
+
+    </div>
+
+</body>
+
+</html>

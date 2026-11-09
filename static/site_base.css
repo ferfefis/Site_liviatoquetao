@@ -1,0 +1,198 @@
+:root {
+    --laranja: #ff4a00;
+    --creme: #f6e3bd;
+    --creme-claro: #fff3dc;
+    --laranja-escuro: #d93f00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--laranja);
+    color: var(--creme);
+}
+
+/* LOGO */
+
+.logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.logo img {
+    width: 400px;
+    height: auto;
+}
+
+/* PÁGINA INICIAL */
+
+.pai {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 25px;
+}
+
+/* BOTÕES DO MENU INICIAL */
+
+.botao-menu {
+    display: inline-block;
+    min-width: 260px;
+    text-align: center;
+    padding: 12px 25px;
+    border: 2px solid var(--creme);
+    border-radius: 20px;
+    color: var(--creme);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.botao-menu:hover {
+    background-color: var(--creme);
+    color: var(--laranja);
+    text-decoration: none;
+}
+
+/* PÁGINA DE CONTATO */
+
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 30px;
+    color: var(--creme);
+}
+
+.contato-container h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* BOTÕES DE CONTATO */
+
+.botao-contato {
+    display: inline-block;
+    min-width: 320px;
+    text-align: center;
+    margin: 8px 0;
+    padding: 12px 25px;
+    border: 2px solid var(--creme);
+    border-radius: 20px;
+    color: var(--creme);
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.botao-contato:hover {
+    background-color: var(--creme);
+    color: var(--laranja);
+    text-decoration: none;
+}
+
+/* BOTÃO VOLTAR */
+
+.voltar {
+    display: inline-block;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding: 10px 22px;
+    border: 2px solid var(--creme);
+    border-radius: 20px;
+    color: var(--creme);
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.voltar:hover {
+    background-color: var(--creme);
+    color: var(--laranja);
+    text-decoration: none;
+}
+
+/* PÁGINA DE PORTFÓLIO */
+
+.portfolio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    color: var(--creme);
+}
+
+.portfolio-container h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+/* CARDS DO PORTFÓLIO */
+
+.cards-portfolio {
+    display: grid;
+    grid-template-columns: repeat(2, 260px);
+    gap: 12px 18px;
+    justify-content: center;
+}
+
+.card-portfolio {
+    padding: 14px 20px;
+    border: 2px solid var(--creme);
+    border-radius: 20px;
+    color: var(--creme);
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+}
+
+.card-portfolio:hover {
+    background-color: var(--creme);
+    color: var(--laranja);
+    text-decoration: none;
+}
+
+/* GALERIA DE FOTOS */
+
+.galeria-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--creme);
+}
+
+.galeria-container h1 {
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.galeria {
+    width: 90%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+/* EFEITO AO PASSAR O MOUSE NAS FOTOS */
+
+.galeria img:hover {
+    transform: scale(1.03);
+}
