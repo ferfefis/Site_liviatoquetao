@@ -23,11 +23,11 @@ body {
 .logo {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    overflow: clip;
 }
 
 .logo img {
-    width: 400px;
+    width: 100%;
     height: auto;
 }
 
@@ -172,13 +172,11 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 20px;
     color: var(--creme);
 }
 
 .galeria-container h1 {
     font-size: 30px;
-    margin-bottom: 25px;
 }
 
 .galeria {
