@@ -7,57 +7,58 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet"
           href="{{ url_for('static', filename='site_base.css') }}">
 </head>
 
 <body>
 
-    <div class="logo">
-        <img src="{{ url_for('static', filename='img/logo_menor.png') }}"
-             alt="Logo Lívia Toquetão">
-    </div>
+<div class="logo">
+    <img src="{{ url_for('static', filename='img/logo_menor.png') }}"
+         alt="Logo Lívia Toquetão">
+</div>
 
-    <div class="portfolio-container">
+<div class="portfolio-container">
 
-        <h1>Portfólio</h1>
+    <h1>Portfólio</h1>
 
-        <div class="cards-portfolio">
+    <div class="cards-portfolio">
 
-            <a class="card-portfolio"
-               href="{{ url_for('buque') }}">
-                Buquês
-            </a>
+        <a class="card-portfolio"
+           href="{{ url_for('buque') }}">
+            Buquês
+        </a>
 
-            <a class="card-portfolio"
-               href="{{ url_for('cerimonias') }}">
-                Cerimônias
-            </a>
+        <a class="card-portfolio"
+           href="{{ url_for('cerimonias') }}">
+            Cerimônias
+        </a>
 
-            <a class="card-portfolio"
-               href="{{ url_for('mesa_doces') }}">
-                Mesa de Doces
-            </a>
+        <a class="card-portfolio"
+           href="{{ url_for('mesa_doces') }}">
+            Mesa de Doces
+        </a>
 
-            <a class="card-portfolio"
-               href="{{ url_for('mesa_convidados') }}">
-                Mesa de Convidados
-            </a>
+        <a class="card-portfolio"
+           href="{{ url_for('mesa_convidados') }}">
+            Mesa de Convidados
+        </a>
 
-            <a class="card-portfolio"
-               href="{{ url_for('backdroop') }}">
-                Backdroop
-            </a>
-
-        </div>
-
-        <a class="voltar"
-           href="{{ url_for('inicio') }}">
-            Voltar para a página inicial
+        <a class="card-portfolio"
+           href="{{ url_for('backdroop') }}">
+            Backdroop
         </a>
 
     </div>
+
+    <a class="voltar"
+       href="{{ url_for('inicio') }}">
+        Voltar para a página inicial
+    </a>
+
+</div>
 
 </body>
 

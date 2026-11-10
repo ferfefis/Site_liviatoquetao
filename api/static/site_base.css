@@ -24,11 +24,11 @@ body {
     display: flex;
     justify-content: center;
     overflow: clip;
+
 }
 
 .logo img {
-    width: 100%;
-    height: auto;
+    max-height: 200px;
 }
 
 /* PÁGINA INICIAL */
