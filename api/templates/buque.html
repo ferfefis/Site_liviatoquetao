@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Buquês - Lívia Toquetão</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='site_base.css') }}">
@@ -11,60 +14,63 @@
 
 <body>
 
-    <div class="logo">
-        <img src="{{ url_for('static', filename='img/logo_menor.png') }}"
-             alt="Logo Lívia Toquetão">
-    </div>
+<div class="logo">
+    <img src="{{ url_for('static', filename='img/logo_menor.png') }}"
+         alt="Logo Lívia Toquetão">
+</div>
 
-    <div class="galeria-container">
+<div class="galeria-container">
 
-        <h1>Buquês</h1>
+    <h1>Buquês</h1>
 
-        <div class="galeria">
+    <div class="container">
+        <div class="galeria d-flex justify-content-center row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
 
-            <img src="{{ url_for('static', filename='img/buques/buque1.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque1.jpeg') }}"
                  alt="Buquê 1">
 
-            <img src="{{ url_for('static', filename='img/buques/buque2.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque2.jpeg') }}"
                  alt="Buquê 2">
 
-            <img src="{{ url_for('static', filename='img/buques/buque3.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque3.jpeg') }}"
                  alt="Buquê 3">
 
-            <img src="{{ url_for('static', filename='img/buques/buque4.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque4.jpeg') }}"
                  alt="Buquê 4">
 
-            <img src="{{ url_for('static', filename='img/buques/buque5.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque5.jpeg') }}"
                  alt="Buquê 5">
 
-            <img src="{{ url_for('static', filename='img/buques/buque6.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque6.jpeg') }}"
                  alt="Buquê 6">
 
-            <img src="{{ url_for('static', filename='img/buques/buque7.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque7.jpeg') }}"
                  alt="Buquê 7">
 
-            <img src="{{ url_for('static', filename='img/buques/buque8.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque8.jpeg') }}"
                  alt="Buquê 8">
 
-            <img src="{{ url_for('static', filename='img/buques/buque9.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque9.jpeg') }}"
                  alt="Buquê 9">
 
-            <img src="{{ url_for('static', filename='img/buques/buque10.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque10.jpeg') }}"
                  alt="Buquê 10">
 
-            <img src="{{ url_for('static', filename='img/buques/buque11.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque11.jpeg') }}"
                  alt="Buquê 11">
 
-            <img src="{{ url_for('static', filename='img/buques/buque12.jpeg') }}"
+            <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/buques/buque12.jpeg') }}"
                  alt="Buquê 12">
 
         </div>
 
-        <a class="voltar" href="{{ url_for('portfolio') }}">
-            Voltar para o portfólio
-        </a>
-
     </div>
+
+    <a class="voltar" href="{{ url_for('portfolio') }}">
+        Voltar para o portfólio
+    </a>
+
+</div>
 
 </body>
 </html>

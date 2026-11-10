@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Cerimônias - Lívia Toquetão</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='site_base.css') }}">
@@ -20,43 +21,44 @@
 
         <h1>Cerimônias</h1>
 
-        <div class="galeria">
+        <div class="container">
+            <div class="galeria d-flex justify-content-center row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
 
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia1.jpeg') }}" alt="Cerimônia branca 1">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia2.jpeg') }}" alt="Cerimônia branca 2">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia3.jpeg') }}" alt="Cerimônia branca 3">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia4.jpeg') }}" alt="Cerimônia branca 4">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia5.jpeg') }}" alt="Cerimônia branca 5">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia6.jpeg') }}" alt="Cerimônia branca 6">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia7.jpeg') }}" alt="Cerimônia branca 7">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia8.jpeg') }}" alt="Cerimônia branca 8">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia9.jpeg') }}" alt="Cerimônia branca 9">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia10.jpeg') }}" alt="Cerimônia branca 10">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia11.jpeg') }}" alt="Cerimônia branca 11">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia12.jpeg') }}" alt="Cerimônia branca 12">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia13.jpeg') }}" alt="Cerimônia branca 13">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia14.jpeg') }}" alt="Cerimônia branca 14">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia15.jpeg') }}" alt="Cerimônia branca 15">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia16.jpeg') }}" alt="Cerimônia branca 16">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia17.jpeg') }}" alt="Cerimônia branca 17">
-            <img src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia18.jpeg') }}" alt="Cerimônia branca 18">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia1.jpeg') }}" alt="Cerimônia branca 1">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia2.jpeg') }}" alt="Cerimônia branca 2">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia3.jpeg') }}" alt="Cerimônia branca 3">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia4.jpeg') }}" alt="Cerimônia branca 4">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia5.jpeg') }}" alt="Cerimônia branca 5">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia6.jpeg') }}" alt="Cerimônia branca 6">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia7.jpeg') }}" alt="Cerimônia branca 7">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia8.jpeg') }}" alt="Cerimônia branca 8">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia9.jpeg') }}" alt="Cerimônia branca 9">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia10.jpeg') }}" alt="Cerimônia branca 10">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia11.jpeg') }}" alt="Cerimônia branca 11">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia12.jpeg') }}" alt="Cerimônia branca 12">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia13.jpeg') }}" alt="Cerimônia branca 13">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia14.jpeg') }}" alt="Cerimônia branca 14">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia15.jpeg') }}" alt="Cerimônia branca 15">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia16.jpeg') }}" alt="Cerimônia branca 16">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia17.jpeg') }}" alt="Cerimônia branca 17">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_branca/cerimonia18.jpeg') }}" alt="Cerimônia branca 18">
 
 
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia1.jpeg') }}" alt="Cerimônia colorida 1">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia2.jpeg') }}" alt="Cerimônia colorida 2">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia3.jpeg') }}" alt="Cerimônia colorida 3">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia4.jpeg') }}" alt="Cerimônia colorida 4">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia5.jpeg') }}" alt="Cerimônia colorida 5">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia6.jpeg') }}" alt="Cerimônia colorida 6">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia7.jpeg') }}" alt="Cerimônia colorida 7">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia8.jpeg') }}" alt="Cerimônia colorida 8">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia9.jpeg') }}" alt="Cerimônia colorida 9">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia10.jpeg') }}" alt="Cerimônia colorida 10">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia11.jpeg') }}" alt="Cerimônia colorida 11">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia12.jpeg') }}" alt="Cerimônia colorida 12">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia13.jpeg') }}" alt="Cerimônia colorida 13">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia14.jpeg') }}" alt="Cerimônia colorida 14">
-            <img src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia15.jpeg') }}" alt="Cerimônia colorida 15">
+                <img class="col-lg-4 col-md-6 col-sm-11"src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia1.jpeg') }}" alt="Cerimônia colorida 1">
+                <img class="col-lg-4 col-md-6 col-sm-11"src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia2.jpeg') }}" alt="Cerimônia colorida 2">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia3.jpeg') }}" alt="Cerimônia colorida 3">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia4.jpeg') }}" alt="Cerimônia colorida 4">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia5.jpeg') }}" alt="Cerimônia colorida 5">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia6.jpeg') }}" alt="Cerimônia colorida 6">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia7.jpeg') }}" alt="Cerimônia colorida 7">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia8.jpeg') }}" alt="Cerimônia colorida 8">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia9.jpeg') }}" alt="Cerimônia colorida 9">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia10.jpeg') }}" alt="Cerimônia colorida 10">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia11.jpeg') }}" alt="Cerimônia colorida 11">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia12.jpeg') }}" alt="Cerimônia colorida 12">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia13.jpeg') }}" alt="Cerimônia colorida 13">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia14.jpeg') }}" alt="Cerimônia colorida 14">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/cerimonia_colorida/cerimonia15.jpeg') }}" alt="Cerimônia colorida 15">
 
         </div>
 

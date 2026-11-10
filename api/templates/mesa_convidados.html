@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Mesa de Convidados - Lívia Toquetão</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet"
           href="{{ url_for('static', filename='site_base.css') }}">
@@ -20,46 +21,47 @@
 
         <h1>Mesa de Convidados</h1>
 
-        <div class="galeria">
+        <div class="container">
+            <div class="galeria d-flex justify-content-center row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa1.jpeg') }}"
-                 alt="Mesa de convidados 1">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa1.jpeg') }}"
+                     alt="Mesa de convidados 1">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa2.jpeg') }}"
-                 alt="Mesa de convidados 2">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa2.jpeg') }}"
+                     alt="Mesa de convidados 2">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa3.jpeg') }}"
-                 alt="Mesa de convidados 3">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa3.jpeg') }}"
+                     alt="Mesa de convidados 3">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa4.jpeg') }}"
-                 alt="Mesa de convidados 4">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa4.jpeg') }}"
+                     alt="Mesa de convidados 4">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa5.jpeg') }}"
-                 alt="Mesa de convidados 5">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa5.jpeg') }}"
+                     alt="Mesa de convidados 5">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa6.jpeg') }}"
-                 alt="Mesa de convidados 6">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa6.jpeg') }}"
+                     alt="Mesa de convidados 6">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa7.jpeg') }}"
-                 alt="Mesa de convidados 7">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa7.jpeg') }}"
+                     alt="Mesa de convidados 7">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa8.jpeg') }}"
-                 alt="Mesa de convidados 8">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa8.jpeg') }}"
+                     alt="Mesa de convidados 8">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa9.jpeg') }}"
-                 alt="Mesa de convidados 9">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa9.jpeg') }}"
+                     alt="Mesa de convidados 9">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa10.jpeg') }}"
-                 alt="Mesa de convidados 10">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa10.jpeg') }}"
+                     alt="Mesa de convidados 10">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa11.jpeg') }}"
-                 alt="Mesa de convidados 11">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa11.jpeg') }}"
+                     alt="Mesa de convidados 11">
 
-            <img src="{{ url_for('static', filename='img/mesa_convidados/mesa12.jpeg') }}"
-                 alt="Mesa de convidados 12">
+                <img class="col-lg-4 col-md-6 col-sm-11" src="{{ url_for('static', filename='img/mesa_convidados/mesa12.jpeg') }}"
+                     alt="Mesa de convidados 12">
 
-        </div>
-
+            </div>
+        </div>class="col-lg-4 col-md-6 col-sm-11"
         <a class="voltar" href="{{ url_for('portfolio') }}">
             Voltar para o portfólio
         </a>
